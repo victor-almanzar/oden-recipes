@@ -65,3 +65,19 @@ img {
   filter: drop-shadow(20px 20px 10px rgb(108, 82, 43));
   line-height: 0;
 }
+article {
+  margin: 16px 0px;
+}
+.row {
+  display:inline-block;
+  width: 100%;
+}
+
+#food-pic,
+#description,
+#ingredients,
+#steps {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+}
