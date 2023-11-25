@@ -1,3 +1,5 @@
+/* All documents */
+
 html {
   box-sizing: border-box;
 }
@@ -36,9 +38,15 @@ a:active {
   background-color: #bb7b1b;
   border-color: #bb7b1b;
 }
+
+/* Main */
+
+body {
+  margin: auto;
+}
+
 body#main {
   text-align: center;
-  margin: auto;
 }
 #main h1 {
   border: 10px dotted #fdb851;
@@ -48,36 +56,45 @@ body#main {
 
 #main a {
   margin: 0 -3px;
-  font-size: 22px;
   display: inline-block;
-  width: 200px;
-  height: 100px;
+  width: 150px;
+  height: 75px;
   vertical-align: top;
-  font-size: 23px;
 }
 
 #main .midoption {
   margin: 0 100px;
 }
 
-img {
-  display: inline-block; /* Wraps around the content */
-  filter: drop-shadow(20px 20px 10px rgb(108, 82, 43));
-  line-height: 0;
-}
-article {
-  margin: 16px 0px;
-}
-.row {
-  display:inline-block;
-  width: 100%;
+/* Recipes */
+
+header,
+section,
+footer {
+  padding: 16px 8px;
 }
 
-#food-pic,
-#description,
-#ingredients,
-#steps {
-  display: inline-block;
-  width: 40%;
-  vertical-align: top;
+body#recipe header {
+  text-decoration: underline dotted 8px #fdb851;
+}
+
+section {
+  width: 50%;
+  float: left;
+  text-align: justify;
+}
+
+#food-pic {
+  filter: drop-shadow(20px 20px 10px rgb(108, 82, 43));
+}
+
+body#recipe footer {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
